@@ -2,7 +2,6 @@ from typing import Tuple, List
 from collections import Counter
 
 INPUTFILE = "inputs/day01.txt"
-# INPUTFILE = "inputs/day01_test.txt"
 
 def get_left_and_right_from_file(filename: str) -> Tuple[List[int],List[int]]:
     left: List[int] = []
@@ -15,7 +14,7 @@ def get_left_and_right_from_file(filename: str) -> Tuple[List[int],List[int]]:
     return left, right
 
 
-def part01(debug: bool = True) -> int:
+def part01(debug: bool = False) -> int:
     dist_total = 0
     if debug:
         filename = INPUTFILE.replace(".txt", "_test.txt")
