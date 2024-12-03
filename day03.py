@@ -27,7 +27,7 @@ def add_mul_ops_v2(mem_str: str) -> int:
     matches = {k: re.finditer(patterns[k], mem_str) for k in patterns.keys()}
 
     # Collect relevant matches
-    sorted_matches: List[str] = []
+    sorted_matches = []
     for k, v in matches.items():
         sorted_matches += list(v)
     sorted_matches = sorted(sorted_matches, key=(lambda m: m.start()))
